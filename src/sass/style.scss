@@ -1,0 +1,16 @@
+// libs
+@use '/src/sass/libs/modern-normalize.min.css';
+@use '/src/sass/libs/pxtorem.scss' as *;
+
+//base
+@use '/src/sass/base/basic.scss';
+@use '/src/sass/base/variables.scss' as *;
+@use '/src/sass/base/mixin.scss' as *;
+
+//components
+@use '/src/sass/components/titles.scss';
+@use '/src/sass/components/buttons.scss';
+
+// blocks
+@use '/src/sass/blocks/container.scss';
+@use '/src/sass/blocks/promo.scss';
