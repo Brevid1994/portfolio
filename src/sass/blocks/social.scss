@@ -1,0 +1,38 @@
+@use '/src/sass/base/variables.scss' as *;
+
+.social {
+    position: fixed;
+    top: 280px;
+    left: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+    &__text {
+        font-weight: $st;
+        font-size: 16px;
+        color: $mtc;
+        writing-mode: vertical-lr;
+        transform: rotate(-180deg);
+    }
+
+    &__divider {
+        width: 2px;
+        height: 70px;
+        border: 1px solid $mtc;
+    }
+
+    &__link {
+        width: 25px;
+        height: 25px;
+
+        &:hover {
+            svg {
+                fill: $main_color;
+            }
+        }
+
+    }
+}

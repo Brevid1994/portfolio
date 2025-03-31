@@ -1,0 +1,18 @@
+@use '/src/sass/base/variables.scss' as *;
+
+.title__h1 {
+    margin-top: 10px;
+    font-weight: $st;
+    font-size: 48px;
+    line-height: 125%;
+    color: $mtc;
+}
+
+.title__h2 {
+    font-weight: $st;
+    font-size: 16px;
+}
+
+.subtite {
+    font-size: 14px;
+}
