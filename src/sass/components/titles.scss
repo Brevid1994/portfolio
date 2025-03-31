@@ -1,3 +1,4 @@
+@use '/src/sass/base/mixin.scss' as *;
 @use '/src/sass/base/variables.scss' as *;
 
 .title__h1 {
@@ -9,10 +10,21 @@
 }
 
 .title__h2 {
+    position: relative;
+    margin-top: 10px;
     font-weight: $st;
-    font-size: 16px;
+    font-size: 36px;
+    @include line;
 }
 
-.subtite {
+.title__h3 {
+    position: relative;
+    font-weight: $st;
+    font-size: 16px;
+    @include circle;
+}
+
+.subtitle {
     font-size: 14px;
+    font-weight: $st;
 }

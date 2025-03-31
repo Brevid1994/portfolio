@@ -4,12 +4,24 @@
     &:before {
         content: '';
         position: absolute;
-        top: -5px;
-        left: -15px;
+        top: -18px;
+        left: -18px;
         height: 36px;
         width: 36px;
         border-radius: 100%;
         background-color: $main_color;
         z-index: -1;
+    }
+}
+
+@mixin line {
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 2px;
+        height: 2px;
+        width: 60px;
+        background-color: $main_color;
     }
 }

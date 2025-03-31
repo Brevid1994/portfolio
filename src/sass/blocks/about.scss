@@ -1,0 +1,63 @@
+@use '/src/sass/base/mixin.scss' as *;
+@use '/src/sass/base/variables.scss' as *;
+
+.about {
+    padding-top: 137px;
+
+    .container {
+        display: flex;
+        gap: 70px;
+    }
+
+    &__photo {
+        width: 400px;
+        height: 550px;
+        object-fit: cover;
+    }
+
+    &__wrapper {
+        width: 60%;
+    }
+
+    &__title-h3 {
+        margin-left: 14px;
+    }
+
+
+    &__text {
+        margin-top: 24px;
+        font-weight: $mt;
+        font-size: 14px;
+    }
+
+    &__skills {
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        column-gap: 80px;
+        row-gap: 50px;
+    }
+
+    &__kard {
+        width: 260px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 20px;
+        @include circle;
+        z-index: 10;
+    }
+
+    &__img {
+        margin-top: 3px;
+        object-fit: cover;
+    }
+
+    &__descr {
+        margin-top: 10px;
+        font-weight: $mt;
+        font-size: 12px;
+    }
+}
