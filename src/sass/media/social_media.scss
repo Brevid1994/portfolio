@@ -1,0 +1,7 @@
+@use '/src/sass/base/variables.scss' as *;
+
+@media screen and (max-width: $mobile) {
+    .social {
+        display: none;
+    }
+}

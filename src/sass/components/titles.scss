@@ -1,7 +1,7 @@
 @use '/src/sass/base/mixin.scss' as *;
 @use '/src/sass/base/variables.scss' as *;
 
-.title__h1 {
+.title-h1 {
     margin-top: 10px;
     font-weight: $st;
     font-size: 48px;
@@ -9,22 +9,31 @@
     color: $mtc;
 }
 
-.title__h2 {
+.title-h2 {
+    position: relative;
+    font-weight: $st;
+    font-size: 16px;
+    color: $mtc;
+    @include circle;
+}
+
+.title-h3 {
     position: relative;
     margin-top: 10px;
     font-weight: $st;
     font-size: 36px;
+    color: $mtc;
     @include line;
 }
 
-.title__h3 {
-    position: relative;
+.title-h4 {
     font-weight: $st;
-    font-size: 16px;
-    @include circle;
+    font-size: 20px;
+    color: $mtc;
 }
 
 .subtitle {
     font-size: 14px;
     font-weight: $st;
+    color: $mtc;
 }

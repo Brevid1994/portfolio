@@ -14,7 +14,11 @@
 // blocks
 @use '/src/sass/blocks/container.scss';
 @use '/src/sass/blocks/promo.scss';
+@use '/src/sass/media/promo_media.scss';
 @use '/src/sass/blocks/social.scss';
+@use '/src/sass/media/social_media.scss';
 @use '/src/sass/components/hamburger.scss';
 @use '/src/sass/blocks/menu.scss';
+@use '/src/sass/media/menu_media.scss';
 @use '/src/sass/blocks/about.scss';
+@use '/src/sass/blocks/experience.scss';

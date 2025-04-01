@@ -4,8 +4,9 @@
     &:before {
         content: '';
         position: absolute;
-        top: -18px;
-        left: -18px;
+        top: -10px;
+        left: 50%;
+        transform: translateX(-50%);
         height: 36px;
         width: 36px;
         border-radius: 100%;
@@ -14,12 +15,26 @@
     }
 }
 
+@mixin circle-mob {
+    &:before {
+        content: '';
+        position: absolute;
+        top: -10px;
+        left: 10%;
+        height: 36px;
+        width: 36px;
+        border-radius: 100%;
+        background-color: $dc;
+        z-index: -1;
+    }
+}
+
 @mixin line {
     &:after {
         content: '';
         position: absolute;
-        bottom: -4px;
-        left: 2px;
+        bottom: -25px;
+        left: 48%;
         height: 2px;
         width: 60px;
         background-color: $main_color;

@@ -1,0 +1,15 @@
+@use '/src/sass/base/variables.scss' as *;
+
+@media screen and (max-width: $mobile) {
+    .menu {
+        width: 50%;
+
+        &__block {
+            width: 240px;
+        }
+
+        &__item {
+            font-size: 18px;
+        }
+    }
+}

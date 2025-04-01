@@ -1,0 +1,27 @@
+@use '/src/sass/base/variables.scss' as *;
+@use '/src/sass/base/mixin.scss' as *;
+
+@media screen and (max-width: $mobile) {
+    .promo {
+        background-position: 36% 30%;
+        background-size: 300%;
+
+        &__about {
+            padding-top: 430px;
+        }
+
+        &__title {
+            font-size: 35px;
+            text-align: center;
+            color: $white;
+            @include circle-mob;
+        }
+
+        &__buttons {
+            justify-content: center;
+            row-gap: 50px;
+        }
+
+
+    }
+}
