@@ -37,3 +37,17 @@
     font-weight: $st;
     color: $mtc;
 }
+
+@media screen and (max-width: $mobile) {
+    .title-h2 {}
+
+    .title-h3 {
+        font-size: 24px;
+    }
+
+    .title-h4 {}
+
+    .subtitle {
+        font-size: 20px;
+    }
+}

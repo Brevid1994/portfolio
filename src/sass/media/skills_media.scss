@@ -1,0 +1,32 @@
+@use '/src/sass/base/variables.scss' as *;
+@use '/src/sass/base/mixin.scss' as *;
+
+@media screen and (max-width: $mobile) {
+    .skills {
+        padding-top: 80px;
+
+        &__title-h3 {
+            &::after {
+                left: 42%;
+            }
+        }
+
+        &__wrapper {
+            margin-top: 35px;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &__card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__progress {
+            margin-top: 40px;
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 50px;
+            column-gap: 0;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+@use '/src/sass/base/variables.scss' as *;
+@use '/src/sass/base/mixin.scss' as *;
+
+@media screen and (max-width: $mobile) {
+    .price {
+        padding-top: 80px;
+
+        &__header {
+            &::after {
+                left: 42%;
+            }
+        }
+
+        &__wrapper {
+            padding: 85px 5px 0 5px;
+            // padding-top: 85px;
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 35px;
+        }
+
+        &__card {
+            padding-left: 10px;
+            justify-content: auto;
+        }
+
+        &__subtitle {
+            font-size: 16px;
+        }
+
+        &__count {
+            font-size: 16px;
+        }
+
+        &__descr {
+            font-size: 12px;
+        }
+    }
+}

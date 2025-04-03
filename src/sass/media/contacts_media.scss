@@ -1,0 +1,51 @@
+@use '/src/sass/base/variables.scss' as *;
+@use '/src/sass/base/mixin.scss' as *;
+
+@media screen and (max-width: $mobile) {
+    .contacts {
+        padding: 80px 0 80px 0;
+
+        &__wrapper {
+            padding: 0;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &__photo {
+            display: none;
+        }
+
+        &__title-h3 {
+            &::after {
+                top: 30px;
+            }
+        }
+
+        &__form {
+            grid-template-columns: 1fr;
+            grid-template-rows: 45px 45px 190px 45px;
+            column-gap: 0;
+            row-gap: 30px;
+        }
+
+        &__textarea {
+            grid-column: 1;
+        }
+
+        &__triggers {
+            grid-column: auto;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &__button {
+            order: 2;
+            margin-top: 0;
+        }
+
+        &__policy {
+            order: 1;
+            justify-content: center;
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+    }
+}
