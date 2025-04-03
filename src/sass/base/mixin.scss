@@ -15,6 +15,19 @@
     }
 }
 
+@mixin circle-small {
+    &:before {
+        content: '';
+        position: absolute;
+        transform: translateX(-50%);
+        height: 15px;
+        width: 15px;
+        border-radius: 100%;
+        background-color: $main_color;
+        z-index: -1;
+    }
+}
+
 @mixin circle-mob {
     &:before {
         content: '';
