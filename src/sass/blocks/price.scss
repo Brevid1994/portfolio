@@ -15,7 +15,7 @@
     }
 
     &__wrapper {
-        padding-top: 85px;
+        padding: 85px 25px 0 25px;
         display: grid;
         grid-template: repeat(3, minmax(45px, auto)) / repeat(2, auto);
         grid-auto-rows: minmax(45px, auto);
@@ -37,17 +37,11 @@
         }
     }
 
-
-
     &__descr {
         font-weight: $mt;
-        font-size: 12px;
+        font-size: 13px;
         color: $mtc;
     }
-
-    // &__subtitle {
-    //     justify-self: start;
-    // }
 
     .end {
         justify-self: space-between;
