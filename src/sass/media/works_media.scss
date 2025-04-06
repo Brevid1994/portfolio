@@ -1,36 +1,50 @@
 @use '/src/sass/base/variables.scss' as *;
 @use '/src/sass/base/mixin.scss' as *;
 
-@media screen and (max-width: $mobile) {
+@media screen and (max-width: $desctop) {
     .works {
         padding-top: 80px;
+    }
+}
 
-        &__title-h3 {
-            &:after {
-                left: 42%;
-            }
-        }
+@media screen and (max-width: $tablet) {
+    .works {
 
         &__wrapper {
-            margin-top: 55px;
-            grid-template-columns: repeat(1, 1fr);
-            row-gap: 20px;
+            grid-template-columns: repeat(3, 1fr);
         }
 
         .plans {
-            grid-row: auto;
-            grid-column: auto;
+            grid-row: unset;
+            grid-column: unset;
         }
 
         .mac {
-            grid-row: auto;
-            grid-column: auto;
+            grid-row: unset;
+            grid-column: unset;
         }
 
         .axit {
-            grid-column: auto;
+            grid-column: unset;
         }
     }
+}
 
+@media screen and (max-width: $mobile) {
+    .works {
 
+        &__wrapper {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: $mobile-min) {
+    .works {
+
+        &__wrapper {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
 }

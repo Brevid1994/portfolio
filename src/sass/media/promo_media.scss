@@ -1,27 +1,106 @@
 @use '/src/sass/base/variables.scss' as *;
 @use '/src/sass/base/mixin.scss' as *;
 
-@media screen and (max-width: $mobile) {
-    .promo {
-        background-position: 36% 30%;
-        background-size: 300%;
 
+@media screen and (max-width: $laptop) {
+    .promo {
         &__about {
-            padding-top: 430px;
+            padding-left: 7%;
         }
 
         &__title {
-            font-size: 35px;
-            text-align: center;
-            color: $white;
-            @include circle-mob;
+            font-size: 42px;
+        }
+    }
+}
+
+@media screen and (max-width: $desctop) {
+    .promo {
+        background-position: 100% 100%;
+        background-size: 60%;
+
+        .social {
+            display: none;
+        }
+
+        &__about {
+            padding-top: 100px;
+            padding-left: 0;
+        }
+
+        &__title {
+            font-size: 44px;
         }
 
         &__buttons {
-            justify-content: center;
-            row-gap: 50px;
+            padding-top: 400px;
+        }
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    .promo {
+        background-size: 75%;
+        background-position: 150% 100%;
+
+        &__title {
+            font-size: 38px;
+        }
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    .promo {
+        background-size: 150%;
+        background-position: 0 20%;
+
+        &__about {
+            padding-top: 120px;
         }
 
+        &__title {
+            font-size: 34px;
+        }
 
+        &__buttons {
+            flex-direction: column;
+            align-items: start;
+            padding-top: 200px;
+            gap: 50px;
+
+            button {
+                width: 150px;
+                background-color: $main_color;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $mobile-min) {
+    .promo {
+        background-size: 300%;
+        background-position: 35% 30%;
+
+        &__about {
+            padding-top: 100px;
+        }
+
+        &__title {
+            font-size: 27px;
+
+            &::before {
+                background-color: $dc;
+            }
+        }
+
+        &__buttons {
+            padding-top: 440px;
+            flex-direction: row;
+            gap: 30px;
+
+            button {
+                background-color: $dc;
+            }
+        }
     }
 }

@@ -1,15 +1,13 @@
 @use '/src/sass/base/variables.scss' as *;
+@use '/src/sass/base/mixin.scss' as *;
 
-@media screen and (max-width: $mobile) {
-    .menu {
-        width: 50%;
 
-        &__block {
-            width: 240px;
-        }
+@media screen and (max-width: $laptop) {}
 
-        &__item {
-            font-size: 18px;
-        }
-    }
-}
+@media screen and (max-width: $desctop) {}
+
+@media screen and (max-width: $tablet) {}
+
+@media screen and (max-width: $mobile) {}
+
+@media screen and (max-width: $mobile-min) {}

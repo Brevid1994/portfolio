@@ -1,38 +1,38 @@
 @use '/src/sass/base/variables.scss' as *;
 @use '/src/sass/base/mixin.scss' as *;
 
-@media screen and (max-width: $mobile) {
+@media screen and (max-width: $desctop) {
     .price {
         padding-top: 80px;
+    }
+}
 
+@media screen and (max-width: $tablet) {
+    .price {
         &__header {
-            &::after {
-                left: 42%;
+            &:after {
+                left: 46%;
             }
         }
 
         &__wrapper {
-            padding: 85px 5px 0 5px;
-            // padding-top: 85px;
-            grid-template-columns: repeat(1, 1fr);
-            row-gap: 35px;
+            padding: 60px 0 0 0;
+            gap: 20px;
+            grid-template-rows: repeat(auto, 1fr);
         }
 
         &__card {
-            padding-left: 10px;
-            justify-content: auto;
+            padding-left: 15px;
         }
+    }
+}
 
-        &__subtitle {
-            font-size: 16px;
-        }
-
-        &__count {
-            font-size: 16px;
-        }
-
-        &__descr {
-            font-size: 12px;
+@media screen and (max-width: $mobile) {
+    .price {
+        &__wrapper {
+            padding: 60px 0 0 0;
+            gap: 40px;
+            grid-template-columns: repeat(1, 1fr);
         }
     }
 }

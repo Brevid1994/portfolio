@@ -1,51 +1,76 @@
 @use '/src/sass/base/variables.scss' as *;
 @use '/src/sass/base/mixin.scss' as *;
 
-@media screen and (max-width: $mobile) {
+
+@media screen and (max-width: $laptop) {}
+
+@media screen and (max-width: $desctop) {
     .contacts {
-        padding: 80px 0 80px 0;
+        padding-top: 80px;
 
-        &__wrapper {
-            padding: 0;
-            grid-template-columns: repeat(1, 1fr);
+        &__photo {
+            img {
+                height: 100%;
+            }
         }
+    }
+}
 
+@media screen and (max-width: $tablet) {
+    .contacts {
         &__photo {
             display: none;
         }
 
-        &__title-h3 {
-            &::after {
-                top: 30px;
-            }
+        &__wrapper {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    .contacts {
+        &__text {
+            text-align: center;
+        }
+
+        &__list {
+            justify-content: center;
         }
 
         &__form {
-            grid-template-columns: 1fr;
-            grid-template-rows: 45px 45px 190px 45px;
-            column-gap: 0;
-            row-gap: 30px;
-        }
-
-        &__textarea {
-            grid-column: 1;
-        }
-
-        &__triggers {
-            grid-column: auto;
+            grid-template-rows: repeat(1, 45px 45px 190px);
             grid-template-columns: repeat(1, 1fr);
         }
 
-        &__button {
-            order: 2;
-            margin-top: 0;
+        &__textarea {
+            grid-column: unset;
         }
 
-        &__policy {
-            order: 1;
+        &__triggers {
+            grid-column: unset;
+            grid-template-columns: repeat(1, .6fr);
             justify-content: center;
-            margin-top: 0;
-            margin-bottom: 25px;
+            gap: 20px;
+        }
+
+        &__button {
+            padding: 5px;
+        }
+    }
+}
+
+@media screen and (max-width: $mobile-min) {
+    .contacts {
+
+        &__title-h3 {
+            &::after {
+                top: 115%;
+            }
+        }
+
+        &__wrapper {
+            padding: 0;
         }
     }
 }

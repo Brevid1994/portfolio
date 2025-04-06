@@ -1,7 +1,13 @@
 @use '/src/sass/base/variables.scss' as *;
+@use '/src/sass/base/mixin.scss' as *;
 
-@media screen and (max-width: $mobile) {
-    .social {
-        display: none;
-    }
-}
+
+@media screen and (max-width: $laptop) {}
+
+@media screen and (max-width: $desctop) {}
+
+@media screen and (max-width: $tablet) {}
+
+@media screen and (max-width: $mobile) {}
+
+@media screen and (max-width: $mobile-min) {}

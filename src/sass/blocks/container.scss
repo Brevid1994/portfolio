@@ -1,10 +1,13 @@
+@use '/src/sass/base/variables.scss' as *;
+@use '/src/sass/base/mixin.scss' as *;
+
 .container {
     max-width: 1140px;
     margin: 0 auto;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: $desctop) {
     .container {
-        padding: 0 10px;
+        padding: 0 20px;
     }
 }
